@@ -1,0 +1,17 @@
+###############################################################################
+## Monit control file
+
+  set daemon 10            # check services at 10 seconds intervals
+  set logfile /var/log/monit.log
+  set pidfile /var/run/monit.pid
+  set idfile /var/lib/monit/id
+  set statefile /var/lib/monit/state
+  set eventqueue
+      basedir /var/lib/monit/events # set the base directory where events will be stored
+      slots 100                     # optionally limit the queue size
+  set httpd port 2812 and
+    use address localhost  # only accept connection from localhost
+    allow 0.0.0.0        # allow localhost to connect to the server and
+    allow admin:monit      # require user 'admin' with password 'monit'
+    include /etc/monit/conf.d/*
+    include /etc/monit/conf-enabled/*
