@@ -1,0 +1,22 @@
+
+#Create MariaDB database
+
+create database grafana;
+grant all privileges on grafana.* to grafana@'%' identified by "password";
+grant all privileges on grafana.* to grafana@'grafana03.akaicloud.com' identified by "password";
+grant all privileges on grafana.* to grafana@'grafana02.akaicloud.com' identified by "password";
+flush privileges;
+
+# Edit Grafana configuration
+
+vi /etc/grafana/grafana.ini
+
+type = mysql
+host = 192.168.128.14:3306
+name = grafana
+user = grafana
+password = password
+
+provider = mysql
+provider_config = `grafana:password@tcp(192.168.128.14:3306)/grafana`
+
