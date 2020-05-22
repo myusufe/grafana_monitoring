@@ -1,0 +1,18 @@
+
+# Add epel repository for CentOS
+
+yum install epel-release
+yum update
+
+#Ubuntu OS
+
+apt install monit
+
+#CentOS OS
+
+yum install monit
+
+#Configure monit
+
+Edit monitrc in /etc/monitrc
+cp grafana to /etc/monit.d
