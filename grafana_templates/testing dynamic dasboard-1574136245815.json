@@ -1,0 +1,559 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 39,
+  "iteration": 1574136241158,
+  "links": [],
+  "panels": [
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 6,
+        "w": 23,
+        "x": 0,
+        "y": 0
+      },
+      "id": 2,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "dataLinks": []
+      },
+      "percentage": false,
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "application": {
+            "filter": "Network interfaces"
+          },
+          "functions": [],
+          "group": {
+            "filter": "Linux servers"
+          },
+          "host": {
+            "filter": "allinone01.akaicloud.com"
+          },
+          "item": {
+            "filter": "Incoming network traffic on ens192"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "allinone01.akaicloud.com -  Incoming network traffic",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 6,
+        "w": 23,
+        "x": 0,
+        "y": 6
+      },
+      "id": 3,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "dataLinks": []
+      },
+      "percentage": false,
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "application": {
+            "filter": "Network interfaces"
+          },
+          "functions": [],
+          "group": {
+            "filter": "$Group"
+          },
+          "host": {
+            "filter": "$Host"
+          },
+          "item": {
+            "filter": "$Interface"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "$Host -  $Interface",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    }
+  ],
+  "schemaVersion": 20,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "tags": [],
+          "text": "Linux servers",
+          "value": "Linux servers"
+        },
+        "datasource": "Zabbix",
+        "definition": "{*}",
+        "hide": 0,
+        "includeAll": false,
+        "label": "Group",
+        "multi": false,
+        "name": "Group",
+        "options": [
+          {
+            "selected": false,
+            "text": "Cisco Switch",
+            "value": "Cisco Switch"
+          },
+          {
+            "selected": false,
+            "text": "Cluster01",
+            "value": "Cluster01"
+          },
+          {
+            "selected": false,
+            "text": "Cluster01 (vm)",
+            "value": "Cluster01 (vm)"
+          },
+          {
+            "selected": false,
+            "text": "Datacenter01",
+            "value": "Datacenter01"
+          },
+          {
+            "selected": false,
+            "text": "Datacenter01 (vm)",
+            "value": "Datacenter01 (vm)"
+          },
+          {
+            "selected": false,
+            "text": "Datacenter03",
+            "value": "Datacenter03"
+          },
+          {
+            "selected": false,
+            "text": "Discovered hosts",
+            "value": "Discovered hosts"
+          },
+          {
+            "selected": false,
+            "text": "ESXi SNMP",
+            "value": "ESXi SNMP"
+          },
+          {
+            "selected": false,
+            "text": "External Host Checking",
+            "value": "External Host Checking"
+          },
+          {
+            "selected": false,
+            "text": "External Ping",
+            "value": "External Ping"
+          },
+          {
+            "selected": false,
+            "text": "Hypervisors",
+            "value": "Hypervisors"
+          },
+          {
+            "selected": false,
+            "text": "JAVA Application",
+            "value": "JAVA Application"
+          },
+          {
+            "selected": false,
+            "text": "Linux VM",
+            "value": "Linux VM"
+          },
+          {
+            "selected": true,
+            "text": "Linux servers",
+            "value": "Linux servers"
+          },
+          {
+            "selected": false,
+            "text": "Staging",
+            "value": "Staging"
+          },
+          {
+            "selected": false,
+            "text": "VM SNMP",
+            "value": "VM SNMP"
+          },
+          {
+            "selected": false,
+            "text": "VSAN",
+            "value": "VSAN"
+          },
+          {
+            "selected": false,
+            "text": "Virtual machines",
+            "value": "Virtual machines"
+          },
+          {
+            "selected": false,
+            "text": "Windows VM",
+            "value": "Windows VM"
+          },
+          {
+            "selected": false,
+            "text": "Zabbix servers",
+            "value": "Zabbix servers"
+          },
+          {
+            "selected": false,
+            "text": "iDrac IPMI Group",
+            "value": "iDrac IPMI Group"
+          },
+          {
+            "selected": false,
+            "text": "iDrac SNMP",
+            "value": "iDrac SNMP"
+          },
+          {
+            "selected": false,
+            "text": "server01.akaicloud.com",
+            "value": "server01.akaicloud.com"
+          },
+          {
+            "selected": false,
+            "text": "server02.akaicloud.com",
+            "value": "server02.akaicloud.com"
+          },
+          {
+            "selected": false,
+            "text": "server03.akaicloud.com",
+            "value": "server03.akaicloud.com"
+          },
+          {
+            "selected": false,
+            "text": "vCenter Group",
+            "value": "vCenter Group"
+          }
+        ],
+        "query": "{*}",
+        "refresh": 0,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "tags": [],
+          "text": "allinone01.akaicloud.com",
+          "value": "allinone01.akaicloud.com"
+        },
+        "datasource": "Zabbix",
+        "definition": "{$Group}{*}",
+        "hide": 0,
+        "includeAll": false,
+        "label": "Host",
+        "multi": false,
+        "name": "Host",
+        "options": [
+          {
+            "selected": false,
+            "text": "192.168.128.15",
+            "value": "192.168.128.15"
+          },
+          {
+            "selected": false,
+            "text": "192.168.128.28",
+            "value": "192.168.128.28"
+          },
+          {
+            "selected": false,
+            "text": "192.168.128.29",
+            "value": "192.168.128.29"
+          },
+          {
+            "selected": true,
+            "text": "allinone01.akaicloud.com",
+            "value": "allinone01.akaicloud.com"
+          },
+          {
+            "selected": false,
+            "text": "grafana02.akaicloud.com",
+            "value": "grafana02.akaicloud.com"
+          },
+          {
+            "selected": false,
+            "text": "mysql01.akaicloud.com",
+            "value": "mysql01.akaicloud.com"
+          },
+          {
+            "selected": false,
+            "text": "mysql02.akaicloud.com",
+            "value": "mysql02.akaicloud.com"
+          },
+          {
+            "selected": false,
+            "text": "proxyserver01.akaicloud.com",
+            "value": "proxyserver01.akaicloud.com"
+          },
+          {
+            "selected": false,
+            "text": "test01.akaicloud.com",
+            "value": "test01.akaicloud.com"
+          },
+          {
+            "selected": false,
+            "text": "test02.akaicloud.com",
+            "value": "test02.akaicloud.com"
+          },
+          {
+            "selected": false,
+            "text": "test023akaicloud.com",
+            "value": "test023akaicloud.com"
+          },
+          {
+            "selected": false,
+            "text": "zabbix01.akaicloud.com - zabbix-agent",
+            "value": "zabbix01.akaicloud.com - zabbix-agent"
+          }
+        ],
+        "query": "{$Group}{*}",
+        "refresh": 0,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "text": "Incoming network traffic on ens192",
+          "value": "Incoming network traffic on ens192"
+        },
+        "datasource": "Zabbix",
+        "definition": "{$Group}{*}{Network interfaces}{*}",
+        "hide": 0,
+        "includeAll": true,
+        "label": "Interface",
+        "multi": true,
+        "name": "Interface",
+        "options": [
+          {
+            "selected": false,
+            "text": "All",
+            "value": "$__all"
+          },
+          {
+            "selected": true,
+            "text": "Incoming network traffic on ens192",
+            "value": "Incoming network traffic on ens192"
+          },
+          {
+            "selected": false,
+            "text": "Outgoing network traffic on ens192",
+            "value": "Outgoing network traffic on ens192"
+          }
+        ],
+        "query": "{$Group}{*}{Network interfaces}{*}",
+        "refresh": 0,
+        "regex": "/network/",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ]
+  },
+  "timezone": "",
+  "title": "testing dynamic dasboard",
+  "uid": "ThE2AWbZk",
+  "version": 9
+}
