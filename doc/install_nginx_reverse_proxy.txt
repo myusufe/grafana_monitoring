@@ -16,7 +16,7 @@ systemctl start nginx
 
 # Create Selfsign SSL key and cert
 
-make /etc/pki/nginx/
+mkdir /etc/pki/nginx/
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/pki/nginx/server.key -out /etc/pki/nginx/server.crt
 
 
