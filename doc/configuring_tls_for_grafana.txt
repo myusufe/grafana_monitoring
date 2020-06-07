@@ -1,0 +1,28 @@
+
+# Create SSL crt and key
+
+cd /etc/grafana
+openssl genrsa -out grafana.key 2048
+openssl req -new -key grafana.key -out grafana.csr
+openssl x509 -req -days 3650 -in grafana.csr -signkey grafana.key -out grafana.crt
+chmod 640 grafana.crt
+chmod 640 grafana.key
+chown root.grafana.*
+
+# edit /etc/grafana/grafana.ini file
+
+protocol = https
+cert_file = /etc/grafana/grafana.crt
+cert_key = /etc/grafana/grafana.key
+
+# Restart grafana
+
+systemctl restart grafana-server
+
+# Check grafana service status
+
+systemctl status grafana-server
+
+# Akses grafana url
+
+https://grafana_ip_address:3000/
